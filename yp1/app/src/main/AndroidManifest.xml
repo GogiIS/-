@@ -13,6 +13,20 @@
         android:theme="@style/Theme.Kngs_and_jester"
         tools:targetApi="31">
         <activity
+            android:name=".musicianActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".histActivity2"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

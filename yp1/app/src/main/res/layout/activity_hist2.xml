@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
-        android:onClick="button3_Click"
+        android:onClick="button_Click"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/tableRow"
@@ -31,7 +31,7 @@
             android:id="@+id/imageView"
             android:layout_width="185dp"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/logo" />
+            app:srcCompat="@mipmap/logo" />
 
         <TextView
             android:id="@+id/textView2"

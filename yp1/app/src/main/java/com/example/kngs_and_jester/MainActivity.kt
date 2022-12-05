@@ -17,4 +17,11 @@ class MainActivity : AppCompatActivity() {
 
              startActivity(intent)
         }
+    fun button4_Click(view: View) {
+
+        val intent: Intent = Intent(
+            this@MainActivity,histActivity2::class.java)
+
+        startActivity(intent)
+    }
     }

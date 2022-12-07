@@ -10,6 +10,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
+    fun button2_Click(view: View) {
+
+        val intent: Intent = Intent(
+            this@MainActivity,AlbomsActivity::class.java)
+
+        startActivity(intent)
+    }
     fun button3_Click(view: View) {
 
         val intent: Intent = Intent(

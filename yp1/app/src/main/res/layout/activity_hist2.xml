@@ -8,52 +8,122 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
+        android:layout_width="416dp"
+        android:layout_height="63dp"
         android:onClick="button_Click"
+        android:text="назад"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/tableRow"
-        app:layout_constraintTop_toBottomOf="@+id/tableRow" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="416dp"
-        android:layout_height="220dp"
+        android:layout_width="415dp"
+        android:layout_height="184dp"
+        android:layout_marginTop="33dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/tableRow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/textView27">
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="185dp"
+            android:layout_width="212dp"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             app:srcCompat="@mipmap/logo" />
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="232dp"
+            android:layout_width="237dp"
             android:layout_height="match_parent"
-            android:text="TextView" />
+            android:text="Коллектив был основан в 1988 году тремя одноклассниками – Михаилом «Горшком» Горшенёвым, Александром «Поручиком» Щиголевым и Александром «Балу» Балуновым.\n Спустя год в состав команды вливается Андрей «Князь» Князев, с которым Горшенёв познакомился в реставрационном училище.\n"
+            android:textColor="#FFCB73" />
+
     </LinearLayout>
 
-    <TableRow
-        android:id="@+id/tableRow"
-        android:layout_width="413dp"
-        android:layout_height="392dp"
-        android:layout_marginTop="5dp"
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="252dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="80dp"
+        android:gravity="center"
+        android:text="История группы «Король и Шут» "
+        android:textColor="@android:color/holo_orange_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="379dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
-        <TextView
-            android:id="@+id/textView"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="TextView" />
-    </TableRow>
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="400dp"
+                android:layout_height="98dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="В 1996 году в состав коллектива вливается гитарист Яков Цвиркунов, сделавший саунд ещё плотнее. В то же время группу приглашают на петербургское телевидение, где в студии снимается несколько роликов, позже позиционируемые как официальные клипы «КиШ»."
+                android:textColor="#FFCB73"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.444"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="403dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="400dp"
+                android:layout_height="107dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text=" В первой половине 90-х годов музыканты активно выступают на клубной сцене Санкт-Петербурга, а также часто наведываются в Москву.Основной концертной площадкой для них стал легендарный петербургский клуб tAm-tAm, основанный бывшим виолончелистом «Аквариума» Севой Гаккелем."
+                android:textColor="#FFCB73"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="296dp" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="В последующие годы коллектив активно гастролирует и играет аншлаговые концерты на крупных площадках Москвы и Санкт-Петербурга. Повышенному вниманию к группе способствуют постоянные ротации песен по радио, а также клипы «Дурак и молния» и «Ели мясо мужики», которые в тот период регулярно можно увидеть в эфире российского MTV. В 1999 году коллектив принимает участие в проекте «КИНОпробы», в рамках которого записывает песню Виктора Цоя «Следи за собой» для первой части и «Кончится лето» для второй."
+                android:textColor="#FFCB73"
+                tools:layout_editor_absoluteX="6dp"
+                tools:layout_editor_absoluteY="500dp" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="«Король и Шут» в нулевые годы В 2000 году в «КиШ» появляется второй гитарист – Александр «Ренегат» Леонтьев. До этого он играл в группе «Кукрыниксы». Летом коллектив впервые выступает на крупнейшем российском рок-фестивале «Нашествие». С тех пор музыканты станут его постоянными участниками и неизменно будут выходить на главную сцену. Два года спустя они выступят на «главном приключении лета» в качестве хедлайнеров, а устроенное ими шоу с выпуском ворон из макета чёрного дома и факельным шествием войдёт в историю отечественных рок-фестивалей."
+                android:textColor="#FFCB73" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Кризис состава В 2004 году после гастролей по США о своём уходе объявила решившая эмигрировать в эту страну скрипачка Мария Нефёдова, игравшая в коллективе с 1997 года. Изменения коснулись и менеджмента – место директора «КиШ» занял Вячеслав Батагов, параллельно работавший с группой «Алиса». Благодаря этому оба коллектива стали часто выступать на одной сцене, а Константин Кинчев фактически назвал группу «Король и Шут» своими приемниками, отметив, что часть «алисаманов», которым не пришлись по душе новые «алисовские» песни, могут стать фанами «кишей»."
+                android:textColor="#FFCB73"
+                android:textColorHint="#CA2C2C" />
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
